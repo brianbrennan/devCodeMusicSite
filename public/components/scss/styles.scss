@@ -1,2 +1,11 @@
 @import 'reset';
 @import 'variables';
+@import 'constants';
+
+/*\
+	----------------------------STYLES
+\*/
+
+body{
+	background:$offWhite;
+}

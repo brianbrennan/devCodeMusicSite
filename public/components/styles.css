@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(https://fonts.googleapis.com/css?family=Raleway:900,200italic,200,400,400italic);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,3 +45,13 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+/*	VARIABLES FOR devCodeMusic.com
+\*/
+body {
+  font-family: "Raleway", sans-serif; }
+
+/*	----------------------------STYLES
+\*/
+body {
+  background: #e4f1fe; }
