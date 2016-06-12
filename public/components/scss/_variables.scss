@@ -5,7 +5,7 @@
 //------------------------VARIABLES
 
 //-------------Imports
-@import url(https://fonts.googleapis.com/css?family=Raleway:900,200italic,200,400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,400italic,700italic,800italic);
 
 //-------------Susy
 $susy: (
@@ -21,12 +21,13 @@ $desktopScreen:	961px 1140px;
 $maxScreen:		1141px;
 
 //-------------Fonts
-$raleway:		'Raleway', sans-serif;
+$openSans:		'Open Sans', sans-serif;
 
 
 //-------------Colors
 $grey: 			#2c3e50;
 $lightGrey:		#eee;
+$midGrey:		#ABB7B7;
 $white:			#fff;
 $black:			#22313f;
 $offWhite:		#e4f1fe;

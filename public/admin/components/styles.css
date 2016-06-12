@@ -53,7 +53,7 @@ table {
 body {
   font-family: "Raleway", sans-serif; }
 
-/*	----------------------------MIXINS
+/*	-----------------------------------------------MIXINS
 \*/
 /*	----------------------------STYLES
 \*/
@@ -66,3 +66,36 @@ body {
   height: 100vh;
   left: 0;
   background-color: #22313f; }
+
+.wrapper {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media (min-width: 961px) and (max-width: 1140px) {
+    .wrapper {
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto; }
+      .wrapper:after {
+        content: " ";
+        display: block;
+        clear: both; } }
+  @media (min-width: 1141px) {
+    .wrapper {
+      max-width: 1140px;
+      margin-left: auto;
+      margin-right: auto; }
+      .wrapper:after {
+        content: " ";
+        display: block;
+        clear: both; } }
+
+.button {
+  width: 60px;
+  font-size: 16px;
+  background-color: #22313f;
+  border-radius: 3px; }

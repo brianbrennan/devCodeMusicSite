@@ -28,3 +28,11 @@ body{
 	left:0;
 	background-color:$black;
 }
+
+.wrapper{
+	@include wideWrapper();
+}
+
+.button{
+	@include actionButton();
+}

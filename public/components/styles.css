@@ -4,7 +4,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(https://fonts.googleapis.com/css?family=Raleway:900,200italic,200,400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,400italic,700italic,800italic);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,11 +50,56 @@ table {
 
 /*	VARIABLES FOR devCodeMusic.com
 \*/
-body {
-  font-family: "Raleway", sans-serif; }
-
-/*	----------------------------MIXINS
+/*	-----------------------------------------------MIXINS
 \*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #2c3e50; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #22313f; }
+
+h1 {
+  font-size: 42px;
+  letter-spacing: 0.04em;
+  margin: 15px 0 30px 0; }
+
+h2 {
+  font-size: 30px;
+  letter-spacing: 0.04em;
+  margin: 15px 0 30px 0; }
+
+h3 {
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  margin: 15px 0; }
+
+h4 {
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  margin: 15px 0; }
+
+h5 {
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  margin: 8px 0; }
+
+h6 {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  margin: 8px 0; }
+
+hr {
+  border-color: #ABB7B7;
+  border-style: solid; }
+
+p {
+  line-height: 1.8;
+  margin: 3px 0 15px 0;
+  max-width: 960px; }
+
 /*	----------------------------STYLES
 \*/
 body {
@@ -86,3 +131,9 @@ body {
         content: " ";
         display: block;
         clear: both; } }
+
+.button {
+  width: 60px;
+  font-size: 16px;
+  background-color: #22313f;
+  border-radius: 3px; }

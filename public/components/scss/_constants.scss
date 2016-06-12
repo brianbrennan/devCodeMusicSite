@@ -1,3 +1,57 @@
 body{
-	font-family:$raleway;
+	font-family:$openSans;
+	color:$grey;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight:900;
+	text-transform:uppercase;
+	color:$black;
+}
+
+h1{
+	font-size:$xlFontSize;
+	letter-spacing:0.04em;
+	margin:$sm 0 $reg 0;
+}
+
+h2{
+	font-size:$lgFontSize;
+	letter-spacing:0.04em;
+	margin:$sm 0 $reg 0;
+}
+
+h3{
+	font-size:$medFontSize;
+	letter-spacing: 0.04em;
+	margin: $sm 0;
+}
+
+h4{
+	font-size:$regFontSize;
+	letter-spacing: 0.04em;
+	margin: $sm 0;
+}
+
+h5{
+	font-size:$smFontSize;
+	letter-spacing: 0.04em;
+	margin: $tny 0;
+}
+
+h6{
+	font-size:$tnyFontSize;
+	letter-spacing: 0.04em;
+	margin: $tny 0;
+}
+
+hr{
+	border-color:$midGrey;
+	border-style:solid;
+}
+
+p{
+	line-height:1.8;
+	margin:$mic 0 $sm 0;
+	@include maxCharWidth($regFontSize);//based on char length
 }

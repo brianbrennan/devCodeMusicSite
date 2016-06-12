@@ -1,5 +1,5 @@
 /*\
-	----------------------------MIXINS
+	-----------------------------------------------MIXINS
 \*/
 
 
@@ -20,4 +20,22 @@
 
 @mixin mobile(){
 	@include breakpoint($smallScreen)
+}
+
+//----------Character Readibility width
+
+@mixin maxCharWidth($charSize){
+	$maxWidth: $charSize * 60;
+	max-width: $maxWidth;
+}
+
+
+
+//----------Buttons
+
+@mixin actionButton(){
+	width:$lg;
+	font-size:$regFontSize;
+	background-color:$black;
+	border-radius: $mic;
 }
