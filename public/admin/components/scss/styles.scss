@@ -8,10 +8,10 @@
 @import './lib/breakpoint-sass/stylesheets/breakpoint';
 
 //INTERNAL IMPORTS
-@import 'reset';
-@import 'variables';
-@import 'constants';
-@import 'mixins';
+@import './components/scss/_variables';
+@import './components/scss/_reset';
+@import './components/scss/_constants';
+@import './components/scss/_mixins';
 
 /*\
 	----------------------------STYLES
@@ -19,10 +19,12 @@
 
 body{
 	background:$lightGrey;
-
-	@include mobile();
 }
 
-.wrapper{
-	@include wideWrapper();
+.sidebar{
+	position:fixed;
+	width:$xxl;
+	height:100vh;
+	left:0;
+	background-color:$black;
 }

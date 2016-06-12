@@ -7,6 +7,19 @@
 //-------------Imports
 @import url(https://fonts.googleapis.com/css?family=Raleway:900,200italic,200,400,400italic);
 
+//-------------Susy
+$susy: (
+	columns:12,
+	gutters:4,
+	gutter-position:after
+);
+
+//-------------Screen Sizing
+$smallScreen:	0px 768px;
+$mediumScreen:	769px 960px;
+$desktopScreen:	961px 1140px;
+$maxScreen:		1141px;
+
 //-------------Fonts
 $raleway:		'Raleway', sans-serif;
 

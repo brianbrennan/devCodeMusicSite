@@ -1,0 +1,23 @@
+/*\
+	----------------------------MIXINS
+\*/
+
+
+//--------------Responsive Wrappers
+@mixin wideWrapper(){
+	@include container(95%);
+
+	@include breakpoint($desktopScreen){
+		@include container(960px);
+	}
+
+	@include breakpoint($maxScreen){
+		@include container(1140px);
+	}
+}
+
+//-----------Easy Breakpoints
+
+@mixin mobile(){
+	@include breakpoint($smallScreen)
+}

@@ -1,10 +1,12 @@
 /*	----------------------------IMPORTS
 \*/
+/*	VARIABLES FOR devCodeMusic.com
+\*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:900,200italic,200,400,400italic);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(https://fonts.googleapis.com/css?family=Raleway:900,200italic,200,400,400italic);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,8 +50,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*	VARIABLES FOR devCodeMusic.com
-\*/
 body {
   font-family: "Raleway", sans-serif; }
 
@@ -60,29 +60,9 @@ body {
 body {
   background: #eee; }
 
-.wrapper {
-  max-width: 95%;
-  margin-left: auto;
-  margin-right: auto; }
-  .wrapper:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  @media (min-width: 961px) and (max-width: 1140px) {
-    .wrapper {
-      max-width: 960px;
-      margin-left: auto;
-      margin-right: auto; }
-      .wrapper:after {
-        content: " ";
-        display: block;
-        clear: both; } }
-  @media (min-width: 1141px) {
-    .wrapper {
-      max-width: 1140px;
-      margin-left: auto;
-      margin-right: auto; }
-      .wrapper:after {
-        content: " ";
-        display: block;
-        clear: both; } }
+.sidebar {
+  position: fixed;
+  width: 120px;
+  height: 100vh;
+  left: 0;
+  background-color: #22313f; }

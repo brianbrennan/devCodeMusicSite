@@ -37,6 +37,31 @@ gulp.task('uglify-angular', function(){
 			.pipe(livereload());
 	});
 
+gulp.task('admin-sass', function(){
+		return gulp.src('admin/components/scss/styles.scss')
+			.pipe(sass().on('error', sass.logError))
+			.pipe(gulp.dest('admin/components'))
+			.pipe(livereload());
+	});
+
+gulp.task('admin-uglify-script', function(){
+		return gulp.src('admin/components/js/*.js')
+			.pipe(concat('script.min.js'))
+			.pipe(uglify())
+			.pipe(gulp.dest('admin/components'))
+			.pipe(livereload());
+	});
+
+gulp.task('admin-uglify-angular', function(){
+		return gulp.src(['admin/app/**/*.js', '!admin/app/app.min.js'])
+			.pipe(concat('app.min.js'))
+			.pipe(uglify({
+				mangle: false
+				}))
+			.pipe(gulp.dest('admin/app/'))
+			.pipe(livereload());
+	});
+
 gulp.task('server', function(){
 		gulp.src('../public')
 			.pipe(livereloadServer({
@@ -48,7 +73,7 @@ gulp.task('server', function(){
 gulp.task('html', function(){
 		gulp.src('*.html')
 			.pipe(livereload());
-	})
+	});
 
 
 gulp.task('watch', function(){
@@ -60,7 +85,10 @@ gulp.task('watch', function(){
 		gulp.watch('components/scss/*.scss', ['sass']);
 		gulp.watch('components/js/*.js', ['uglify-script']);
 		gulp.watch(['app/**/*.js', '!app/app.min.js'], ['uglify-angular']);
+		gulp.watch('admin/components/scss/*.scss', ['admin-sass']);
+		gulp.watch('admin/components/js/*.js', ['admin-uglify-script']);
+		gulp.watch(['admin/app/**/*.js', '!admin/app/app.min.js'], ['admin-uglify-angular']);
 	});
 
-gulp.task('default', ['server','sass', 'uglify-script', 'uglify-angular', 'watch']);
+gulp.task('default', ['server','sass', 'uglify-script', 'uglify-angular','admin-sass', 'admin-uglify-script', 'admin-uglify-angular', 'watch']);
 
