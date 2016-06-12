@@ -40,10 +40,14 @@ gulp.task('server', function(){
 		gulp.src('../public')
 			.pipe(livereloadServer({
 					livereload:true,
-					directoryListing:true,
 					open:true
 				}));
 	});
+
+gulp.task('html', function(){
+		gulp.src('*.html')
+			.pipe(livereload());
+	})
 
 
 gulp.task('watch', function(){
@@ -51,6 +55,7 @@ gulp.task('watch', function(){
 				port:8000,
 				host:'devCodeMusic.dev'
 			});
+		gulp.watch('**/*.html', ['html']);
 		gulp.watch('components/scss/*.scss', ['sass']);
 		gulp.watch('components/js/*.js', ['uglify-script']);
 		gulp.watch(['app/**/*.js', '!app/app.min.js'], ['uglify-angular']);
