@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "devDependencies": {
     "bcrypt-nodejs": "0.0.3",
+    "beepbeep": "^1.2.0",
     "body-parser": "^1.13.3",
     "bower": "^1.4.1",
     "email-verification": "^0.1.9",

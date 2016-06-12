@@ -9,6 +9,7 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	jshint = require('gulp-jshint'),
 	stylish = require('jshint-stylish'),
+	beep = require('beepbeep'),
 	watch  = require('gulp-watch');
 
 gulp.task('sass', function(){
