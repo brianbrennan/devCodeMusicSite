@@ -16,12 +16,6 @@
 	}
 }
 
-//-----------Easy Breakpoints
-
-@mixin mobile(){
-	@include breakpoint($smallScreen)
-}
-
 //----------Character Readibility width
 
 @mixin maxCharWidth($charSize){
@@ -113,12 +107,58 @@
 @mixin greenAlert(){
 	background-color:$lightGreen;
 	display:inline-block;
+	width:300px;
+	visibility:hidden;
 	color:$white;
 	padding:$sm;
 	border-radius:$mic;
 	position:fixed;
-	top:$tny;
+	top:-($lg);
 	@include transform(translate(-50%,0));
+	@include transition(0.2s)
+
+	&.active{
+		top:$tny;
+		visibility:visible;
+	}
+}
+
+@mixin blueAlert(){
+	background-color:$blue;
+	display:inline-block;
+	width:300px;
+	visibility:hidden;
+	color:$white;
+	padding:$sm;
+	border-radius:$mic;
+	position:fixed;
+	top:-($lg);
+	@include transform(translate(-50%,0));
+	@include transition(0.2s)
+
+	&.active{
+		top:$tny;
+		visibility:visible;
+	}
+}
+
+@mixin redAlert(){
+	background-color:$lightRed;
+	display:inline-block;
+	width:300px;
+	visibility:hidden;
+	color:$white;
+	padding:$sm;
+	border-radius:$mic;
+	position:fixed;
+	top:-($lg);
+	@include transform(translate(-50%,0));
+	@include transition(0.2s)
+
+	&.active{
+		top:$tny;
+		visibility:visible;
+	}
 }
 
 //----------Input Fields
@@ -138,4 +178,22 @@
 		color: $color;
 		opacity: 1;
 	}
+}
+
+//---------General Sizing
+
+@mixin full(){
+	@include span(12);
+}
+
+@mixin half(){
+	@include span(6);
+}
+
+@mixin third($n:1){
+	@include span(4 * $n);
+}
+
+@mixin fourth($n:1){
+	@include span(3 * $n);
 }

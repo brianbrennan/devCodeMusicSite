@@ -1,9 +1,11 @@
 body{
 	font-family:$openSans;
 	color:$grey;
+	background:$lightGrey;
 }
 
 *{
+	box-sizing:border-box;
 	&:focus{
 		outline:none;
 	}
@@ -164,6 +166,14 @@ input[type="button"], input[type="submit"]{
 	@include greenAlert();
 }
 
+.redAlert{
+	@include redAlert();
+}
+
+.blueAlert{
+	@include blueAlert();
+}
+
 //------------------------------------Input Fields
 
 input[type="text"], input[type="email"], textarea{
@@ -222,17 +232,91 @@ textarea{
 	font-family:$openSans;
 }
 
+//------------------------------------Content Cards
+
 .content-card{
 	background-color:$white;
 	padding:$sm;
+	margin-bottom:$sm;
 
 	@include breakpoint($desktopScreen){
 		padding:$reg;
-		margin:$sm;
 	}
 
 	@include breakpoint($maxScreen){
 		padding:$med;
-		margin:$sm;
 	}
+}
+
+.card{
+	background-color:$white;
+	padding:$reg;
+	border-radius:0 0 $mic $mic;
+	margin-bottom:$sm;
+
+	@include breakpoint($desktopScreen){
+	}
+
+	@include breakpoint($maxScreen){
+	}
+}
+
+.img-card{
+	margin-bottom:$sm;
+
+	img{
+		width:100%;
+		height:auto;
+	}
+
+	.content{
+		background-color:$white;
+		padding:$reg;
+		border-radius:0 0 $mic $mic;
+	}
+}
+
+//------------------------------------General Wrappers
+
+.wrapper{
+	@include wideWrapper();
+	padding:$sm;
+}
+
+//------------------------------------General Sizing Classes
+
+.full{
+	@include full();
+}
+
+.half{
+	@include half();
+}
+
+.third{
+	@include third();
+}
+
+.two-third{
+	@include third(2);
+}
+
+.fourth{
+	@include fourth();
+}
+
+.two-fourth{
+	@include fourth(2);
+}
+
+.three-fourth{
+	@include fourth(3);
+}
+
+.clear{
+	clear:both;
+}
+
+.last{
+	@include last();
 }

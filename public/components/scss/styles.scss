@@ -18,12 +18,3 @@
 	----------------------------STYLES
 \*/
 
-body{
-	background:$lightGrey;
-
-	@include mobile();
-}
-
-.wrapper{
-	@include wideWrapper();
-}

@@ -96,10 +96,14 @@
 
 			<p>These would pop up automatically depending on different events occuring on the site. Click the corresponding button to see the alerts</p>
 
-			<input type="button" value="Heads Up" class="blueButton">
-			<input type="button" value="Added to Cart" class="greenButton">
+			<input type="button" value="Heads Up" class="blueButton" onclick="showAlert('blue')">
+			<input type="button" value="Added to Cart" class="greenButton" onclick="showAlert('green')">
+			<input type="button" value="Error" class="redButton" onclick="showAlert('red')">
 
-			<!-- <div class="greenAlert">Item Added to Cart</div> -->
+
+			<div class="greenAlert">Item Added to Cart</div>
+			<div class="blueAlert">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, temporibus! Ipsum, nesciunt, magni, delectus esse nemo, autem asperiores nostrum excepturi impedit ab optio dolorum vitae doloribus dignissimos adipisci distinctio porro.</div>
+			<div class="redAlert">ERROR: Something Went Wrong. Whoops</div>
 
 			<hr>
 
@@ -119,13 +123,52 @@
 
 			<textarea cols="50" rows="3" placeholder="Enter a message"></textarea>
 
-			
+			<hr>
+
+			<h2>Cards</h2>
+
+			<p>Below are some examples of cards and modules that would be put in various places across the site</p>
+		</div>
+
+		<div class="card third">
+			<h3>Here is some content in a card</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum animi ratione sint nihil laboriosam, consequuntur ab inventore error possimus nesciunt, deserunt esse rem placeat culpa, dignissimos! Ratione labore, praesentium laborum!</p>
+		</div>
+
+		<div class="card two-third last">
+			<h3>Here is a larger card</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum animi ratione sint nihil laboriosam, consequuntur ab inventore error possimus nesciunt, deserunt esse rem placeat culpa, dignissimos! Ratione labore, praesentium laborum!</p>
+		</div>
+
+		<div class="img-card two-third clear">
+			<img src="https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=576bb45620043f729baef96301c9acb6" alt="">
+			<div class="content">
+				<h3>Here is an image card</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nisi ipsa enim cumque distinctio tempore eaque aut accusamus vel odio porro, quae at pariatur quia nihil a quam sequi doloremque.</p>
+			</div>
+		</div>
+
+		<div class="img-card third last">
+			<img src="https://images.unsplash.com/photo-1461352195749-fdba50b79c74?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e646f3330c747a0222fc55b59355ca82" alt="">
+			<div class="content">
+				<h3>Here is an image card</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nisi ipsa enim cumque distinctio tempore eaque aut accusamus vel odio porro, quae at pariatur quia nihil a quam sequi doloremque.</p>
+			</div>
+		</div>
+
+		<div class="content-card clear">
+			<h2>Modal Windows</h2>
+
+			<p>Click the buttons to get different modal windows for the site</p>
+
+			<input type="button" value="Click for Modal">
 		</div>
 	</div>
 
 	<script src="lib/angular/angular.min.js"></script>
 	<script src="lib/angular-animate/angular-animate.min.js"></script>
 	<script src="lib/angular-route/angular-route.min.js"></script>
+	<script src="lib/slimpickin/dist/slimpickin.min.js"></script>
 	<script src="app/app.min.js"></script>
 	<script src="components/script.min.js"></script>
 </body>
