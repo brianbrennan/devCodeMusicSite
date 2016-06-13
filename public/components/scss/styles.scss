@@ -10,6 +10,7 @@
 //INTERNAL IMPORTS
 @import 'reset';
 @import 'variables';
+@import 'animations';
 @import 'mixins';
 @import 'constants';
 
@@ -25,8 +26,4 @@ body{
 
 .wrapper{
 	@include wideWrapper();
-}
-
-.button{
-	@include actionButton();
 }
