@@ -15,10 +15,10 @@ $susy: (
 );
 
 //-------------Screen Sizing
-$smallScreen:	0px 768px;
-$mediumScreen:	769px 960px;
-$desktopScreen:	961px 1140px;
-$maxScreen:		1141px;
+$smallScreenSize:			0px 768px;
+$mediumScreenSize:		769px 959px;
+$desktopScreenSize:		960px;
+$maxScreenSize:			1140px;
 
 //-------------Fonts
 $openSans:		'Open Sans', sans-serif;

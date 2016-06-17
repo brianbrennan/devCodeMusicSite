@@ -7,11 +7,7 @@
 @mixin wideWrapper(){
 	@include container(100%);
 
-	@include breakpoint($desktopScreen){
-		@include container(960px);
-	}
-
-	@include breakpoint($maxScreen){
+	@include breakpoint($maxScreenSize){
 		@include container(1140px);
 	}
 }
@@ -196,4 +192,8 @@
 
 @mixin fourth($n:1){
 	@include span(3 * $n);
+}
+
+@mixin twelfth($n:1){
+	@include span($n);
 }

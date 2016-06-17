@@ -1,0 +1,224 @@
+//----------------------------Grid System
+
+//---------------------Large Screen Columns
+
+.lg-1{
+	@include breakpoint($desktopScreenSize){
+		@include span(1);
+	}
+}
+
+.lg-2{
+	@include breakpoint($desktopScreenSize){
+		@include span(2);
+	}
+}
+
+.lg-3{
+	@include breakpoint($desktopScreenSize){
+		@include span(3);
+	}
+}
+
+.lg-4{
+	@include breakpoint($desktopScreenSize){
+		@include span(4);
+	}
+}
+
+.lg-5{
+	@include breakpoint($desktopScreenSize){
+		@include span(5);
+	}
+}
+
+.lg-6{
+	@include breakpoint($desktopScreenSize){
+		@include span(6);
+	}
+}
+
+.lg-7{
+	@include breakpoint($desktopScreenSize){
+		@include span(7);
+	}
+}
+
+.lg-8{
+	@include breakpoint($desktopScreenSize){
+		@include span(8);
+	}
+}
+
+.lg-9{
+	@include breakpoint($desktopScreenSize){
+		@include span(9);
+	}
+}
+
+.lg-10{
+	@include breakpoint($desktopScreenSize){
+		@include span(10);
+	}
+}
+
+.lg-11{
+	@include breakpoint($desktopScreenSize){
+		@include span(11);
+	}
+}
+
+.lg-12{
+	@include breakpoint($desktopScreenSize){
+		@include span(12);
+	}
+}
+
+//---------------------Medium Screen Columns
+
+.med-1{
+	@include breakpoint($mediumScreenSize){
+		@include span(1);
+	}
+}
+
+.med-2{
+	@include breakpoint($mediumScreenSize){
+		@include span(2);
+	}
+}
+
+.med-3{
+	@include breakpoint($mediumScreenSize){
+		@include span(3);
+	}
+}
+
+.med-4{
+	@include breakpoint($mediumScreenSize){
+		@include span(4);
+	}
+}
+
+.med-5{
+	@include breakpoint($mediumScreenSize){
+		@include span(5);
+	}
+}
+
+.med-6{
+	@include breakpoint($mediumScreenSize){
+		@include span(6);
+	}
+}
+
+.med-7{
+	@include breakpoint($mediumScreenSize){
+		@include span(7);
+	}
+}
+
+.med-8{
+	@include breakpoint($mediumScreenSize){
+		@include span(8);
+	}
+}
+
+.med-9{
+	@include breakpoint($mediumScreenSize){
+		@include span(9);
+	}
+}
+
+.med-10{
+	@include breakpoint($mediumScreenSize){
+		@include span(10);
+	}
+}
+
+.med-11{
+	@include breakpoint($mediumScreenSize){
+		@include span(11);
+	}
+}
+
+.med-12{
+	@include breakpoint($mediumScreenSize){
+		@include span(12);
+	}
+}
+
+//---------------------Small Screen Columns
+
+.sm-1{
+	@include breakpoint($smallScreenSize){
+		@include span(1);
+	}
+}
+
+.sm-2{
+	@include breakpoint($smallScreenSize){
+		@include span(2);
+	}
+}
+
+.sm-3{
+	@include breakpoint($smallScreenSize){
+		@include span(3);
+	}
+}
+
+.sm-4{
+	@include breakpoint($smallScreenSize){
+		@include span(4);
+	}
+}
+
+.sm-5{
+	@include breakpoint($smallScreenSize){
+		@include span(5);
+	}
+}
+
+.sm-6{
+	@include breakpoint($smallScreenSize){
+		@include span(6);
+	}
+}
+
+.sm-7{
+	@include breakpoint($smallScreenSize){
+		@include span(7);
+	}
+}
+
+.sm-8{
+	@include breakpoint($smallScreenSize){
+		@include span(8);
+	}
+}
+
+.sm-9{
+	@include breakpoint($smallScreenSize){
+		@include span(9);
+	}
+}
+
+.sm-10{
+	@include breakpoint($smallScreenSize){
+		@include span(10);
+	}
+}
+
+.sm-11{
+	@include breakpoint($smallScreenSize){
+		@include span(11);
+	}
+}
+
+.sm-12{
+	@include breakpoint($smallScreenSize){
+		@include span(12);
+	}
+}
+
