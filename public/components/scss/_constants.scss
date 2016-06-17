@@ -236,16 +236,9 @@ textarea{
 
 .content-card{
 	background-color:$white;
-	padding:$sm;
+	padding:$reg;
 	margin-bottom:$sm;
 
-	@include breakpoint($desktopScreen){
-		padding:$reg;
-	}
-
-	@include breakpoint($maxScreen){
-		padding:$med;
-	}
 }
 
 .card{
@@ -254,11 +247,6 @@ textarea{
 	border-radius:0 0 $mic $mic;
 	margin-bottom:$sm;
 
-	@include breakpoint($desktopScreen){
-	}
-
-	@include breakpoint($maxScreen){
-	}
 }
 
 .img-card{
@@ -276,47 +264,53 @@ textarea{
 	}
 }
 
+//------------------------------------Modal Window
+
+.modal-overlay{
+	position:fixed;
+	visibility:hidden;
+	top:0;
+	width:100vw;
+	height:100vh;
+	background-color:rgba($black,0.0);
+	@include transition(0.2s);
+
+	.modal-window{
+		visibility:hidden;
+		opacity:0;
+	}
+
+	&.active{
+		visibility: visible;
+		background-color:rgba($black,0.7);
+
+		.modal-window{
+			visibility:visible;
+			opacity:1;
+		}
+	}
+}
+
+.modal-window{
+	background-color:$white;
+	border-radius:$mic;
+	padding:$reg;
+	top:$reg;
+	@include transition(0.2s);
+	position:relative;
+
+	.close{
+		position:absolute;
+		right:$sm;
+		top:$sm;
+		cursor:pointer;
+		font-weight:900;
+		font-size:$medFontSize;
+	}
+}
+
 //------------------------------------General Wrappers
 
-.wrapper{
-	@include wideWrapper();
+.container{
 	padding:$sm;
-}
-
-//------------------------------------General Sizing Classes
-
-.full{
-	@include full();
-}
-
-.half{
-	@include half();
-}
-
-.third{
-	@include third();
-}
-
-.two-third{
-	@include third(2);
-}
-
-.fourth{
-	@include fourth();
-}
-
-.two-fourth{
-	@include fourth(2);
-}
-
-.three-fourth{
-	@include fourth(3);
-}
-
-.clear{
-	clear:both;
-}
-
-.last{
-	@include last();
 }

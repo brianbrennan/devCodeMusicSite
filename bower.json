@@ -19,5 +19,8 @@
     "breakpoint-sass": "~2.5.0",
     "slimpickin": "~0.8.2",
     "susy": "~2.2.2"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "~3.3.6"
   }
 }

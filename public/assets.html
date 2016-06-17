@@ -7,8 +7,8 @@
 </head>
 <body>
 
-	<div class="wrapper">
-		<div class="content-card">
+	<div class="container">
+		<div class="content-card col-xs-12">
 
 			<h1>Styles &amp; Assets</h1>
 
@@ -130,12 +130,12 @@
 			<p>Below are some examples of cards and modules that would be put in various places across the site</p>
 		</div>
 
-		<div class="card third">
+		<div class="card col-xs-12 col-sm-4">
 			<h3>Here is some content in a card</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum animi ratione sint nihil laboriosam, consequuntur ab inventore error possimus nesciunt, deserunt esse rem placeat culpa, dignissimos! Ratione labore, praesentium laborum!</p>
 		</div>
 
-		<div class="card two-third last">
+		<div class="card  col-xs-12 col-sm-8">
 			<h3>Here is a larger card</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum animi ratione sint nihil laboriosam, consequuntur ab inventore error possimus nesciunt, deserunt esse rem placeat culpa, dignissimos! Ratione labore, praesentium laborum!</p>
 		</div>
@@ -161,9 +161,23 @@
 
 			<p>Click the buttons to get different modal windows for the site</p>
 
-			<input type="button" value="Click for Modal">
+			<input type="button" value="Click for Modal" onclick="showModal('general')">
 		</div>
 	</div>
+
+			<div class="modal-overlay" onclick="closeModal()">
+				<div class="container">
+					<div class="modal-window full"  onclick="formStop()">
+						<h3>Enter Your Email For Cool Stuff!</h3>
+						<input type="text" placeholder="Name"><input type="email" placeholder="Email">
+						<br>
+						<br>
+						<input type="submit">
+
+						<div class="close" onclick="closeModal('general')">X</div>
+					</div>
+				</div>
+			</div>
 
 	<script src="lib/angular/angular.min.js"></script>
 	<script src="lib/angular-animate/angular-animate.min.js"></script>

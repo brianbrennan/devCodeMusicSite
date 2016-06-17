@@ -3,19 +3,6 @@
 \*/
 
 
-//--------------Responsive Wrappers
-@mixin wideWrapper(){
-	@include container(100%);
-
-	@include breakpoint($desktopScreen){
-		@include container(960px);
-	}
-
-	@include breakpoint($maxScreen){
-		@include container(1140px);
-	}
-}
-
 //----------Character Readibility width
 
 @mixin maxCharWidth($charSize){
