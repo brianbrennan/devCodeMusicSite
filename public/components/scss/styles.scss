@@ -3,12 +3,9 @@
 \*/
 
 //EXTERNAL IMPORTS
+@import './lib/susy/sass/susy.scss';
 @import './lib/bourbon/app/assets/stylesheets/bourbon';
-@import './lib/bootstrap-sass/assets/stylesheets/bootstrap/variables';
-@import './lib/bootstrap-sass/assets/stylesheets/bootstrap/mixins/grid-framework';
-@import './lib/bootstrap-sass/assets/stylesheets/bootstrap/mixins/grid';
-@import './lib/bootstrap-sass/assets/stylesheets/bootstrap/grid';
-
+@import './lib/breakpoint-sass/stylesheets/breakpoint';
 
 //INTERNAL IMPORTS
 @import 'reset';

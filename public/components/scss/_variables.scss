@@ -7,6 +7,13 @@
 //-------------Imports
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:200,400,700,800,400italic,700italic,800italic);
 
+//-------------Susy
+$susy: (
+	columns:12,
+	gutters:1/4,
+	gutter-position:after
+);
+
 //-------------Screen Sizing
 $smallScreen:	0px 768px;
 $mediumScreen:	769px 960px;
