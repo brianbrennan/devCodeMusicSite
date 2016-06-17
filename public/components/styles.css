@@ -366,7 +366,7 @@ textarea {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 15px; }
+  padding: 3px; }
   .wrapper:after {
     content: " ";
     display: block;
@@ -380,6 +380,12 @@ textarea {
         content: " ";
         display: block;
         clear: both; } }
+  @media (min-width: 769px) and (max-width: 959px) {
+    .wrapper {
+      padding: 8px; } }
+  @media (min-width: 960px) {
+    .wrapper {
+      padding: 15px; } }
 
 .clear {
   clear: both; }

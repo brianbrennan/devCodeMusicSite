@@ -260,7 +260,15 @@ textarea{
 
 .wrapper{
 	@include wideWrapper();
-	padding:$sm;
+	padding:$mic;
+
+	@include breakpoint($mediumScreenSize){
+		padding:$tny;
+	}
+
+	@include breakpoint($desktopScreenSize){
+		padding:$sm;
+	}
 }
 
 //------------------------------------General layout Classes
