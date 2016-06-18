@@ -6,6 +6,8 @@ var express 		= require('express'),
 	path			= require('path'),
 	jwt				= require('jsonwebtoken'),
 	nev 			= require('email-verification'),
+	userApiRoutes	= require('./app/route/user-api')(app, express),
+	commentApiRoutes 	= require('./app/route/comment-api')(app, express),
 	config			= require('./server-config');
 
 //---------Body Parser
@@ -27,8 +29,17 @@ Authorization');
 
 mongoose.connect(config.database);
 
+//---------------------------Set Up API Routing
+
+app.use('/api/users', userApiRoutes);
+app.use('/api/comments',commentApiRoutes);
+
 
 //LOG ALL REQUESTS TO CONSOLE
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/public'));
+
+//START THE SERVER
+app.listen(config.port);
+console.log('Server Active at port ' + config.port);
 
