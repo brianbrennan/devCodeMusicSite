@@ -42,3 +42,8 @@ body{
 .admin-wrapper .ct-point{
 	stroke: $blue !important;
 }
+
+.ct-series-b .ct-line,
+.ct-series-b .ct-point{
+	stroke: $green !important;
+}

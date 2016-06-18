@@ -675,3 +675,7 @@ body {
 .admin-wrapper .ct-line,
 .admin-wrapper .ct-point {
   stroke: #59ABE3 !important; }
+
+.ct-series-b .ct-line,
+.ct-series-b .ct-point {
+  stroke: #3FC380 !important; }

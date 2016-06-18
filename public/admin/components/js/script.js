@@ -5,7 +5,8 @@ var data = {
   labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Saturday', 'Sunday'],
   // Our series array that contains series objects or in this case series data arrays
   series: [
-    [20,40,120,80,100,150,600]
+    [20,40,120,80,100,150,600],
+    [0,10,12,15,10,9,20]
   ]
 };
 
