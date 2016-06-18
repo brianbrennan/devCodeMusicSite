@@ -652,3 +652,29 @@ textarea {
 
 /*	----------------------------STYLES
 \*/
+.sidebar {
+  position: fixed;
+  width: 120px;
+  height: 100vh;
+  left: 0;
+  background-color: #22313f; }
+
+.admin-wrapper {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .admin-wrapper:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media (min-width: 960px) {
+    .admin-wrapper {
+      padding: 15px 15px 15px 135px; } }
+
+.admin-wrapper .ct-line,
+.admin-wrapper .ct-point {
+  stroke: #59ABE3 !important; }
+
+.ct-series-b .ct-line,
+.ct-series-b .ct-point {
+  stroke: #3FC380 !important; }
