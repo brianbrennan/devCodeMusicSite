@@ -1,6 +1,4 @@
 (function(){
 
-	var app = angular.module('myApp', ['app.routes']);
-
-	console.log('test');
+	var app = angular.module('devCode', ['app.routes', 'homeCtrl']);
 })();

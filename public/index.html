@@ -5,18 +5,18 @@
 	<title>devCode</title>
 	<link rel="stylesheet" href="components/styles.css">
 </head>
-<body>
+<body ng-app="devCode">
 
 	<div class="wrapper">
-		public
-
+		
+		<div ng-view></div>
 		
 	</div>
 
 	<script src="lib/angular/angular.min.js"></script>
 	<script src="lib/angular-animate/angular-animate.min.js"></script>
 	<script src="lib/angular-route/angular-route.min.js"></script>
-	<script src="app/public_app/app.min.js"></script>
+	<script src="apps/public_app/app.min.js"></script>
 	<script src="components/script.min.js"></script>
 </body>
 </html>
