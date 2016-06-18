@@ -5,6 +5,7 @@
 	<title>devCode Amin</title>
 	<base href="../public" target="_blank">
 	<link rel="stylesheet" href="admin/components/styles.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
 </head>
 <body>
 
@@ -12,13 +13,56 @@
 		
 	</div>
 
-	<div class="wrapper">
-		<div class="button">test</div>
+	<div class="admin-wrapper">
+		<div class="card">
+			<h1>Admin Dashboard</h1>
+		</div>
+
+		<div class="card lg-3">
+			<h3>
+				New Users
+			</h3>
+
+			<ul>
+				<li>new account 1</li>
+				<li>new account 2</li>
+				<li>new account 3</li>
+				<li>new account 4</li>
+				<li>new account 5</li>
+			</ul>
+		</div>
+
+		<div class="card lg-6">
+			<h3>
+				Today's Activity
+			</h3>
+
+			<hr>
+
+			<div class="ct-chart ct-perfect-fourth">
+				
+			</div>
+		</div>
+
+		<div class="card lg-3 last">
+			<h3>
+				Most Played
+			</h3>
+		</div>
+
+		<div class="card lg-4">
+			<h3>Most Visited Pages</h3>
+		</div>
+
+		<div class="card lg-5 last">
+			<h3>Manage Blog</h3>
+		</div>
 	</div>
 
 	<script src="./lib/angular/angular.min.js"></script>
 	<script src="./lib/angular-animate/angular-animate.min.js"></script>
 	<script src="./lib/angular-route/angular-route.min.js"></script>
+	<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 	<script src="admin/app/app.min.js"></script>
 	<script src="admin/components/script.min.js"></script>
 </body>

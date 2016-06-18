@@ -8,10 +8,11 @@
 @import './lib/breakpoint-sass/stylesheets/breakpoint';
 
 //INTERNAL IMPORTS
-@import './components/scss/_variables';
 @import './components/scss/_reset';
-@import './components/scss/_constants';
+@import './components/scss/_variables';
 @import './components/scss/_mixins';
+@import './components/scss/_constants';
+@import './components/scss/_grid';
 
 /*\
 	----------------------------STYLES
@@ -29,10 +30,15 @@ body{
 	background-color:$black;
 }
 
-.wrapper{
-	@include wideWrapper();
+.admin-wrapper{
+	@include container(100%);
+	
+	@include breakpoint($desktopScreenSize){
+		padding:$sm $sm $sm ($xxl + $sm);
+	}
 }
 
-.button{
-	@include actionButton();
+.admin-wrapper .ct-line,
+.admin-wrapper .ct-point{
+	stroke: $blue !important;
 }
