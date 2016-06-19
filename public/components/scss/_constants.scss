@@ -144,7 +144,7 @@ nav{
 
 //-------------------------------------Buttons
 
-input[type="button"], input[type="submit"]{
+input[type="button"], input[type="submit"], button{
 	@include button();
 }
 
@@ -176,7 +176,7 @@ input[type="button"], input[type="submit"]{
 
 //------------------------------------Input Fields
 
-input[type="text"], input[type="email"], textarea{
+input[type="text"], input[type="email"], textarea, input[type="password"]{
 	padding:$sm;
 	border-radius:$mic;
 	border:1px solid $midGrey;

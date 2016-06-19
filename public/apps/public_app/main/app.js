@@ -1,6 +1,6 @@
 (function(){
 
-	var app = angular.module('devCode', ['app.routes', 'homeCtrl', 'userService', 'authService', 'globalsService'])
+	var app = angular.module('devCode', ['app.routes', 'homeCtrl','loginCtrl', 'userService', 'authService', 'globalsService'])
 
 	.config(function($httpProvider){
 		$httpProvider.interceptors.push('AuthInterceptor');

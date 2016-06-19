@@ -4,18 +4,30 @@
 	.controller('homeController', function($http, $scope, $rootScope, Auth, User){
 
 		var vm = this;
+		vm.loggedIn;
+		vm.user;
 
-		Auth.login('brian','test');
 
-		vm.loggedIn = Auth.isLoggedIn();
+		//-------------------------------Function Calls
+		checkedLoggedInStatus();
+		getUser();
 
-		if(vm.loggedIn){
-			Auth.getUser().then(function(res){
-				vm.me = res.data;
-			});		
+
+		//-------------------------------Private Functions
+
+		function checkedLoggedInStatus(){
+			vm.loggedIn = Auth.isLoggedIn();
 		}
 
-		console.log(vm.me);
+		function getUser(){			
+			if(vm.loggedIn){
+				Auth.getUser().then(function(res){
+					console.log(res);
+					vm.user = res.data.user;
+				});		
+			}
+			return;
+		}
 
 	});
 })();
