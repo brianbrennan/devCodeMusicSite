@@ -27,7 +27,7 @@ gulp.task('uglify-script', function(){
 	});
 
 gulp.task('uglify-angular', function(){
-		return gulp.src(['apps/public_app/**/*.js', '!apps/public_app/app.min.js'])
+		return gulp.src(['public_app/**/*.js', '!/public_app/app.min.js'])
 			.pipe(concat('app.min.js'))
 			.pipe(uglify({
 				mangle: false
@@ -35,7 +35,20 @@ gulp.task('uglify-angular', function(){
 					console.log(err);
 					process.stdout.write('\x07');
 				}))
-			.pipe(gulp.dest('apps/public_app'))
+			.pipe(gulp.dest('public_app'))
+			.pipe(livereload());
+	});
+
+gulp.task('admin-uglify-angular', function(){
+		return gulp.src(['admin/admin_app/**/*.js', '!admin/admin_app/app.min.js'])
+			.pipe(concat('app.min.js'))
+			.pipe(uglify({
+				mangle: false
+				}).on('error', function(err){
+					console.log(err);
+					process.stdout.write('\x07');
+				}))
+			.pipe(gulp.dest('admin/admin_app'))
 			.pipe(livereload());
 	});
 
@@ -62,7 +75,8 @@ gulp.task('watch', function(){
 		gulp.watch('**/*.html', ['html']);
 		gulp.watch('components/scss/*.scss', ['sass']);
 		gulp.watch('components/js/*.js', ['uglify-script']);
-		gulp.watch(['apps/**/**/*.js', '!apps/public_app/app.min.js'], ['uglify-angular']);
+		gulp.watch(['public_app/**/*.js', '!public_app/app.min.js'], ['uglify-angular']);
+		gulp.watch(['admin/admin_app/**/*.js', '!admin/admin_app/app.min.js'], ['admin-uglify-angular']);
 	});
 
-gulp.task('default', ['server','sass','uglify-script','uglify-angular', 'watch']);
+gulp.task('default', ['server','sass','uglify-script','uglify-angular', 'admin-uglify-angular', 'watch']);

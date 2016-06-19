@@ -3,13 +3,13 @@
 
 	route.config(function($routeProvider, $locationProvider){
 		$routeProvider.when('/', {
-			templateUrl: 'apps/public_app/views/home.html',
+			templateUrl: 'public_app/views/home.html',
 			controller: 'homeController',
 			controllerAs: 'home'
 		})
 
 		.when('/login', {
-			templateUrl: 'apps/public_app/views/login.html',
+			templateUrl: 'public_app/views/login.html',
 			controller: 'loginController',
 			controllerAs: 'login'
 		})
