@@ -40,6 +40,7 @@ gulp.task('server', function(){
 		gulp.src('../public')
 			.pipe(livereloadServer({
 					livereload:true,
+					port:8000,
 					open:true
 				}));
 	});
