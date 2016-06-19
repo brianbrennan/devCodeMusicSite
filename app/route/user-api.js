@@ -124,7 +124,9 @@ module.exports = function(app, express){
 			} else {
 				User.find({
 					username: new RegExp(req.query.username,'i')
-				}).exec(function(err, users){
+				})
+				.limit(req.query.limit)
+				.exec(function(err, users){
 					if(err)
 						return res.send(err);
 					res.json({
