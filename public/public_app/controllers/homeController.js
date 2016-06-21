@@ -4,8 +4,6 @@
 	.controller('homeController', function($http, $scope, $rootScope, Auth, User){
 
 		var vm = this;
-		vm.loggedIn;
-		vm.user;
 
 
 		//-------------------------------Function Calls
@@ -26,7 +24,6 @@
 					vm.user = res.data.user;
 				});		
 			}
-			return;
 		}
 
 	});
